@@ -1,4 +1,0 @@
-username,timestamp,event
-user1,2025-07-25 10:00:00,login
-user1,2025-07-25 10:01:10,login
-user1,2025-07-25 10:02:30,login

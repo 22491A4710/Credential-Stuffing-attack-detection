@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credential Stuffing Detection</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <h1>Login Form</h1>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username" required /><br>
+    <input type="text" id="ip" placeholder="IP Address" required /><br>
+    
+    <!-- reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6LcHYJMrAAAAAENPEuuRGmj79bNNLuiOMCuJ6Dmj"></div>
+    
+    <button type="submit">Login</button>
+  </form>
+
+  <h2>Login Attempts (Credential Stuffing Detection)</h2>
+  <canvas id="myChart" width="400" height="200"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
